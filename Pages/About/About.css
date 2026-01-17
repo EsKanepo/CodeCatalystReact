@@ -1,0 +1,96 @@
+/* ================= ABOUT HERO ================= */
+.brand-hero {
+  background: linear-gradient(180deg, #ffffff 0%, #f9fbff 100%);
+  padding: clamp(3rem, 6vw, 5rem) 1rem;
+}
+
+.brand-hero h1 {
+  font-weight: 800;
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  margin-bottom: 1rem;
+}
+
+.brand-hero .lead {
+  line-height: 1.6;
+  max-width: 52rem;
+  color: #444;
+}
+
+/* ================= HERO IMAGE ================= */
+.hero-illustration {
+  max-width: 380px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(16, 24, 40, 0.06);
+}
+
+/* ================= VIDEO THUMB ================= */
+.thumb-link {
+  position: relative;
+  display: block;
+  max-width: 620px;
+  margin: 3rem auto 0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 28px rgba(16, 24, 40, 0.1);
+}
+
+.thumb-img {
+  width: 100%;
+  display: block;
+}
+
+.play-overlay {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.65);
+  color: #fff;
+  font-size: 28px;
+  padding: 14px 18px;
+  border-radius: 50%;
+}
+
+/* ================= TEXT ================= */
+.muted-small {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 991px) {
+  .brand-hero {
+    padding: 2rem 1rem;
+  }
+  .brand-hero h1 {
+    font-size: 1.8rem;
+  }
+  .hero-illustration {
+    max-width: 300px;
+    margin: 2rem auto 0;
+  }
+}
+
+@media (max-width: 768px) {
+    .brand-hero {
+    padding: 2.5rem 1rem;
+    text-align: center;
+  }
+    .hero-illustration {
+    display: none;
+  }
+}
+
+@media (max-width: 575px) {
+    .brand-hero {
+    padding: 2rem 1rem;
+  }
+
+  .brand-hero h1 {
+    font-size: 1.4rem;
+  }
+    .brand-hero .lead {
+    font-size: 0.95rem;
+  }
+}
