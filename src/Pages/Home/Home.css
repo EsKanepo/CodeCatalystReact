@@ -1,0 +1,136 @@
+/* ================= HERO ================= */
+.hero {
+  background: linear-gradient(135deg, var(--brand-dark), var(--brand-light));
+  color: white;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  padding: clamp(2rem, 6vw, 4rem) 1rem;
+}
+
+.hero h1 {
+  font-size: clamp(1.6rem, 4vw, 2.6rem);
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  line-height: 1.05;
+}
+
+.hero .lead {
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: 1rem;
+  max-width: 58rem;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+}
+
+.course-link-item {
+  text-decoration: none;
+}
+
+/* ================= TEXT ================= */
+.muted-small {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.member-list li {
+  font-size: 0.95rem;
+}
+
+.popular-pill {
+  display: inline-block;
+  padding: .45rem .9rem;
+  border-radius: 999px;
+  background: #fff;
+  color: var(--brand-dark);
+  border: 1px solid rgba(11,112,217,0.06);
+  text-decoration: none;
+  font-weight:600;
+  white-space: nowrap;
+  transition: background .18s ease, color .18s ease, box-shadow .18s ease;
+}
+
+.popular-pill:hover,
+.popular-pill:focus {
+  background: linear-gradient(90deg,var(--brand-dark),var(--brand-light));
+  color: #fff;
+  box-shadow: 0 8px 22px rgba(11,112,217,0.08);
+  text-decoration: none;
+}
+
+/* ================= POPULAR FILTER BUTTONS ================= */
+.popular-filter-btn {
+  border-width: 1px;
+  border-radius: 999px;
+  padding-inline: 1.1rem;
+  font-weight: 600;
+  transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+
+.popular-filter-btn.active {
+  background: linear-gradient(90deg, var(--brand-dark), var(--brand-light));
+  border-color: transparent;
+  color: #fff;
+}
+
+/* Hover mirip navbar: abu-abu muda kalau belum active */
+.popular-filter-btn:not(.active):hover {
+  background: #f0eee9;
+  border-color: #f0eee9;
+  color: var(--brand-dark);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 991px) {
+  .hero {
+    min-height: auto;
+    padding: 2.5rem 1rem;
+  }
+
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+  .hero-image { 
+    max-width: 380px; 
+  }
+}
+
+@media (max-width: 768px){
+  .hero { 
+    padding: 2rem 1rem; 
+    text-align: center; 
+  }
+  .hero h1 { 
+    font-size: 1.6rem; 
+  }
+  .hero-image { 
+    max-width: 350px; 
+  }
+  .popular-pill { 
+    padding: 0.4rem 0.75rem; 
+    font-size: 0.9rem; 
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    padding: 2rem 0.75rem;
+  }
+
+  .hero h1 { 
+    font-size: 1.4rem; 
+  }
+
+  .hero .lead {
+    font-size: 0.95rem;
+  }
+
+  .hero-image {
+    max-width: 320px;
+  }
+  .popular-pill { padding: 0.35rem 0.7rem; font-size: 0.85rem; }
+}

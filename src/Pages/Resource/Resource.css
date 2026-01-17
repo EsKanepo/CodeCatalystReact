@@ -1,0 +1,222 @@
+
+/* Header section (reuse pattern from courses-detail header) */
+.page-header {
+  background: linear-gradient(135deg, var(--brand-dark), var(--brand-light));
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.page-header p {
+  color: #e0e0e0;
+  font-size: 1.1rem;
+  margin-bottom: 0;
+}
+
+.resource-section {
+  background: var(--bg-light);
+}
+
+/* Main content cards */
+.content-card {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(16, 24, 40, 0.08);
+  padding: 20px;
+  height: auto;
+  transition: all 0.3s ease;
+}
+
+.content-card:hover {
+  box-shadow: 0 10px 25px rgba(16, 24, 40, 0.15);
+  transform: translateY(-3px);
+}
+
+.card-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--brand-dark);
+  margin-bottom: 15px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--brand-light);
+}
+
+.card-title i {
+  color: var(--brand-light);
+}
+
+/* Buku referensi */
+.resource-item {
+  background: var(--bg-light);
+  border-radius: 10px;
+  padding: 18px 16px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: all 0.3s ease;
+}
+
+.resource-item:hover {
+  background: #e8f4ff;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(16, 24, 40, 0.15);
+}
+
+.resource-icon {
+  font-size: 2rem;
+  margin-bottom: 6px;
+}
+
+.resource-item h5 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--brand-dark);
+  margin-bottom: 2px;
+}
+
+.resource-item .btn-outline-primary {
+  margin-top: 6px;
+}
+
+/* List groups (Website Tutorial & Channel YouTube) */
+.list-group-item {
+  border: none;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 14px 0;
+}
+
+.list-group-item:last-child {
+  border-bottom: none;
+}
+
+.list-group-item strong {
+  color: var(--brand-dark);
+}
+
+/* Tools & Software */
+.tool-card {
+  background: var(--bg-light);
+  border-radius: 10px;
+  padding: 18px 16px;
+  text-align: center;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.tool-card:hover {
+  background: #e8f4ff;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(16, 24, 40, 0.15);
+}
+
+.tool-icon {
+  font-size: 2rem;
+  color: var(--brand-light);
+  margin-bottom: 8px;
+}
+
+.tool-card h6 {
+  font-weight: 700;
+  color: var(--brand-dark);
+}
+
+/* Dokumentasi Framework links */
+.doc-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 12px 14px;
+  background: var(--bg-light);
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--brand-dark);
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.doc-link i:first-child {
+  font-size: 1.5rem;
+  color: var(--brand-light);
+}
+
+.doc-link i:last-child {
+  font-size: 0.9rem;
+}
+
+.doc-link span {
+  flex: 1;
+  margin: 0 8px;
+}
+
+.doc-link:hover {
+  background: var(--brand-light);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(8, 42, 89, 0.25);
+}
+
+.doc-link:hover i:first-child {
+  color: white;
+}
+
+/* CTA box */
+.cta-box {
+  background: white;
+  border-radius: 14px;
+  padding: 30px 20px;
+  margin-top: 10px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.18);
+}
+
+.cta-box h4 {
+  font-weight: 700;
+  color: var(--brand-dark);
+  margin-bottom: 10px;
+}
+
+.cta-box p {
+  color: var(--muted);
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .page-header {
+    padding: 40px 16px;
+  }
+
+  .page-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .content-card {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .page-header {
+    padding: 30px 15px;
+  }
+
+  .page-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .page-header p {
+    font-size: 1rem;
+  }
+
+  .content-card {
+    padding: 15px;
+  }
+}
+

@@ -1,0 +1,77 @@
+/* ================= CONTACT HERO ================= */
+.contact-hero {
+  background: linear-gradient(135deg, var(--brand-dark), var(--brand-light));
+  color: #fff;
+  padding: 2.5rem 1rem;
+  text-align: center;
+}
+
+.contact-hero h1 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.contact-hero .lead {
+  max-width: 680px;
+  margin: 0.5rem auto 0;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* ================= CONTACT FORM ================= */
+.contact-form {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+}
+
+.contact-form .form-label {
+  font-size: 0.95rem;
+}
+
+.contact-form .form-control {
+  padding: 0.65rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #e3e6ea;
+  font-size: 0.95rem;
+}
+
+.contact-form .form-control:focus {
+  border-color: var(--brand-light);
+  box-shadow: 0 0 0 0.15rem rgba(58, 160, 255, 0.15);
+}
+
+.contact-form textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+/* ================= CONTACT INFO ================= */
+.contact-info {
+  background: #f9fafc;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.contact-info h4 {
+  font-weight: 700;
+}
+
+/* Mobile */
+@media (max-width: 576px){
+  .contact-hero {
+    padding: 1.5rem 1rem;
+  }
+  
+  .contact-hero h1 {
+    font-size: 1.5rem;
+  }
+  
+  .contact-form {
+    padding: 1rem;
+    margin: 0.5rem;
+  }
+  
+  .contact-form .form-control {
+    font-size: 0.9rem;
+  }
+}

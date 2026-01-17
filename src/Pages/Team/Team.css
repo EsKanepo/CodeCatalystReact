@@ -1,0 +1,99 @@
+.team-hero {
+  background: linear-gradient(135deg, var(--brand-dark), var(--brand-light));
+  color: white;
+  padding: 3rem 1rem;
+}
+
+.team-hero h1 {
+  font-weight: 700;
+  font-size: 1.9rem;
+}
+
+.team-hero .lead {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.profile-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.profile-card .card-desc {
+  max-height: 90px;
+  overflow: hidden;
+  transition: max-height 0.35s ease, opacity 0.3s ease;
+  opacity: 0.85;
+}
+
+.profile-card .card-desc.expanded {
+  max-height: 400px;
+  opacity: 1;
+}
+
+.profile-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(16, 24, 40, 0.1);
+}
+.profile-card .card-body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.profile-card .card-desc {
+  flex-grow: 1;
+}
+
+
+.profile-card img {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+}
+
+
+.team-table td a {
+  color: var(--brand-dark);
+  text-decoration: underline;
+}
+
+.team-philosophy {
+  background: linear-gradient(135deg, var(--brand-dark), var(--brand-light));
+  color: white;
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+}
+
+.team-philosophy p {
+  max-width: 700px;
+  margin: auto;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+
+@media (max-width: 991px){
+  .team-hero { padding: 2.5rem 1rem; }
+  .team-hero h1 { font-size: 1.7rem; }
+  .profile-card { margin-bottom: 1.5rem; }
+}
+
+@media (max-width: 768px) {
+  .team-hero { padding: 2rem 1rem; text-align: center; }
+  .team-hero h1 { font-size: 1.6rem; }
+  .profile-card img { width: 96px; height: 96px; }
+  .team-table { font-size: 0.9rem; }
+  .team-table td, .team-table th { padding: 10px; }
+}
+
+@media (max-width: 576px){
+  .team-hero { padding: 1.5rem 1rem; }
+  .team-hero h1 { font-size: 1.4rem; }
+  .profile-card img { width: 85px; height: 85px; }
+  .profile-card .card-body { padding: 10px; }
+  .muted-small { font-size: 0.9rem; }
+  .team-table { font-size: 0.85rem; }
+  .team-table td, .team-table th { padding: 8px 5px; }
+  .team-philosophy { padding: 20px 15px; }
+}
