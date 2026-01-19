@@ -52,7 +52,7 @@ body {
         content: "CodeCatalyst";
     }
 }
-
+ 
 @keyframes typing{
     0% {
         width: calc(100% + 10px);
@@ -70,22 +70,22 @@ body {
         width: calc(100% + 10px);
     }
 }
-
+ 
 /* ===== NAVBAR ===== */
-
+ 
 .navbar {
   background-color: white;
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
   border-bottom: 1px solid #eee;
   padding: 0.75rem 1.5rem;
 }
-
+ 
 .navbar-brand span {
   font-weight: 700;
   font-size: 20px;
   color: #0a0a0a;
 }
-
+ 
 /* DEFAULT LINK */
 .navbar .nav-link {
   color: #0a0a0a;
@@ -95,41 +95,41 @@ body {
   transition: background-color 0.25s ease, color 0.25s ease;
   text-decoration: none;
 }
-
+ 
 /* HOVER (ONLY IF NOT ACTIVE) */
 .navbar .nav-link:not(.active):hover {
   background: #f0eee9;
 }
-
+ 
 .navbar .nav-link:not(.active):hover i {
   color: var(--brand-light);
 }
-
+ 
 /* ACTIVE STATE (NavLink otomatis nambah class active) */
 .navbar .nav-link.active {
   background: linear-gradient(135deg, var(--brand-dark), var(--brand-light));
   color: #fff !important;
 }
-
+ 
 .navbar .nav-link.active i {
   color: #fff !important;
 }
 /* ===============================
    FIX NAVBAR SEARCH OVERLAP
    =============================== */
-
+ 
 /* Navbar harus selalu di atas konten */
 .navbar {
   position: sticky;
   top: 0;
   z-index: 1050;
 }
-
-
+ 
+ 
 .navbar .container {
   position: relative;
 }
-
+ 
 .navbar-user-wrapper {
   display: inline-flex;
   align-items: center;
@@ -138,12 +138,12 @@ body {
   padding: 6px 10px; /* lebih tinggi, tidak terlalu panjang ke samping */
   border-radius: 999px;
 }
-
+ 
 .navbar-user-name {
   color: #f8f9fa;
   font-weight: 700;
 }
-
+ 
 .navbar-signout-btn {
   background-color: #ffffff;
   color: var(--brand-dark);
@@ -153,12 +153,12 @@ body {
   font-weight: 600;
   font-size: 0.85rem;
 }
-
+ 
 .navbar-signout-btn:hover {
   background-color: #f1f5f9;
   border-color: #f1f5f9;
 }
-
+ 
 .navbar-search-dropdown,
 .dropdown-menu {
   position: absolute;
@@ -170,7 +170,7 @@ body {
   border-radius: 8px;
   box-shadow: 0 8px 24px rgba(0,0,0,0.12);
 }
-
+ 
 /* ===== BUTTON ===== */
 .btn-accent{
   box-shadow: 0 8px 22px rgba(255, 138, 0, 0.14);
@@ -181,20 +181,20 @@ body {
   border-radius: 6px;
   transition: all 0.3s ease;
 }
-
+ 
 .btn-accent:hover{
   background: white;
   transform: translateY(-2px);
 }
-
+ 
 .btn-accent:hover i {
   color: var(--brand-light);
 }
-
+ 
 .btn-light:hover i {
   color: var(--brand-light);
 }
-
+ 
 .feature-card {
   background: #fff;
   border-radius: 12px;
@@ -204,21 +204,21 @@ body {
   min-height: 160px;
   color: #333;
 }
-
+ 
 .feature-card:hover {
   background: #f9fafb;
   box-shadow: 0 10px 28px rgba(16, 24, 40, 0.1);
   transform: translateY(-4px);
 }
-
+ 
 .feature-card i {
   color: var(--brand-dark);
 }
-
+ 
 .feature-card:hover i {
   color: var(--brand-light);
 }
-
+ 
 /* ===== SOCIAL ICON (GLOBAL) ===== */
 .social-icons a {
       display: inline-block;
@@ -234,7 +234,7 @@ body {
       transition: 0.3s;
       gap: 2px;
 }
-
+ 
 .social-icons a.instagram { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%); }
 .social-icons a.facebook { background: #3b5998; }
 .social-icons a.twitter  { background: #1da1f2; }
@@ -245,7 +245,7 @@ body {
       transform: scale(1.1);
       opacity: 0.8;
 }
-
+ 
 @media (max-width: 991px){
   .navbar { padding: 0.75rem 1rem; }
   .navbar .nav-link { font-size: 0.9rem; padding: 6px 10px; }
@@ -253,10 +253,13 @@ body {
     .feature-card {padding: 1.25rem; min-height: auto;
   }
 }
-
+ 
 @media (max-width: 768px){
   .navbar { flex-wrap: wrap; }
   .navbar-nav { justify-content: center; width: 100%; margin-top: 0.5rem; }
+  .navbar-user-wrapper {
+    margin-top: 0.5rem;
+  }
   footer { text-align: center; }
 }
 @media (max-width: 576px){
@@ -264,4 +267,21 @@ body {
   .navbar .nav-link { font-size: 0.85rem; padding: 5px 8px; }
   .social-icons a { width: 40px; height: 40px; line-height: 40px; font-size: 18px; }
   .feature-card {padding: 1rem;}
-}
+ 
+  /* Sesuaikan tampilan user info + tombol Keluar di HP kecil */
+  .navbar-user-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 4px;
+    padding: 4px 8px;
+    max-width: 100%;
+  }
+ 
+  .navbar-user-name {
+    font-size: 0.8rem;
+  }
+ 
+  .navbar-signout-btn {
+    padding: 3px 10px;
+    font-size: 0.8rem;
+  }
